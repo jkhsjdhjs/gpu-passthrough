@@ -7,3 +7,11 @@ Pass GPU to VM and back without X restart using DRI3 drivers: https://arseniyshe
 GPU passthrough without restart: https://www.reddit.com/r/VFIO/comments/93c4s7/passing_nvidia_card_between_host_and_guest_and_to/  
 Passing primary nvidia gpu to vm (proprietary drivers) with X restart: https://bbs.archlinux.org/viewtopic.php?id=233959  
 Collection of information and scripts regarding gpu passthrough: https://gitlab.com/YuriAlek/vfio
+
+### amd reset bug
+The AMD reset bug is an issue in qemu with many AMD cards.
+Apparently qemu fails to correctly reset the card on guest shutdown/reboot which causes the card to not be usable anymore until host reboot.  
+https://vfio.blogspot.com/2015/04/progress-on-amd-front.html  
+https://www.reddit.com/r/VFIO/comments/5tf62v/who_still_experiences_the_amd_reset_bug/  
+https://www.reddit.com/r/VFIO/comments/52ij8j/the_amdresetbug_will_it_ever_be_fixedwhere_to/  
+https://www.reddit.com/r/VFIO/comments/angluw/restart_vs_shutdown_of_vm/
