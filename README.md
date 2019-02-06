@@ -15,3 +15,7 @@ https://vfio.blogspot.com/2015/04/progress-on-amd-front.html
 https://www.reddit.com/r/VFIO/comments/5tf62v/who_still_experiences_the_amd_reset_bug/  
 https://www.reddit.com/r/VFIO/comments/52ij8j/the_amdresetbug_will_it_ever_be_fixedwhere_to/  
 https://www.reddit.com/r/VFIO/comments/angluw/restart_vs_shutdown_of_vm/
+
+Possible solution:  
+https://forum.level1techs.com/t/linux-host-windows-guest-gpu-passthrough-reinitialization-fix/121097  
+https://forums.unraid.net/topic/69373-graphics-card-reset-issue-amd/?tab=comments#comment-635252  
