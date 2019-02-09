@@ -24,4 +24,4 @@ https://forums.unraid.net/topic/69373-graphics-card-reset-issue-amd/?tab=comment
 ### could be interesting
 | command | comment | source |
 | --- | --- | --- |
-| `touch /sys/kernel/debug/dri/1/amdgpu_gpu_recover` | gpu recovery | [1](https://github.com/RadeonOpenCompute/ROCK-Kernel-Driver/issues/11#issuecomment-450696825), [2](https://dri.freedesktop.org/docs/drm/gpu/amdgpu.html) |
+| `cat /sys/kernel/debug/dri/1/amdgpu_gpu_recover` | gpu recovery | [1](https://github.com/RadeonOpenCompute/ROCK-Kernel-Driver/issues/11#issuecomment-450696825), [2](https://dri.freedesktop.org/docs/drm/gpu/amdgpu.html) |
