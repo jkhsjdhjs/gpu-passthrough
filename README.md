@@ -20,3 +20,8 @@ https://www.reddit.com/r/VFIO/comments/angluw/restart_vs_shutdown_of_vm/
 Possible solution:  
 https://forum.level1techs.com/t/linux-host-windows-guest-gpu-passthrough-reinitialization-fix/121097  
 https://forums.unraid.net/topic/69373-graphics-card-reset-issue-amd/?tab=comments#comment-635252  
+
+### could be interesting
+| command | comment | source |
+| --- | --- | --- |
+| `cat /sys/kernel/debug/dri/1/amdgpu_gpu_recover` | gpu recovery | [1](https://github.com/RadeonOpenCompute/ROCK-Kernel-Driver/issues/11#issuecomment-450696825), [2](https://dri.freedesktop.org/docs/drm/gpu/amdgpu.html) |
