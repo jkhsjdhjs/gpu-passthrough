@@ -28,7 +28,7 @@ https://forums.unraid.net/topic/69373-graphics-card-reset-issue-amd/?tab=comment
 
 ### kvm_set_msr_common
 When launching some games (e.g. L.A. Noire) in a VM with CPU model set to 'host-model' the game may crash and the following errors get logged by the kernel: https://gist.github.com/jkhsjdhjs/f45046d7dbec02d5a0dc9136319f222a  
-This is caused by the NVIDIA driver (apparently only on Windows 10) trying to use some MSRs (Model Specific Registers) of your host CPU the VCPU doesn't support.
+This is caused by the NVIDIA driver (apparently only on Windows 10) trying to use some MSRs (Model Specific Registers) of the host CPU the VCPU doesn't support.
 `ignore_msrs` is already set to 1 here (check with `cat /sys/module/kvm/parameters/ignore_msrs`).  
 It could be fixed by changing the CPU model. However I haven't had the time to test which CPU model works yet.  
 https://www.reddit.com/r/VFIO/comments/4kagkv/nvidia_system_unstable_windows_10_qemukvmvgapass/d3dldyj/
