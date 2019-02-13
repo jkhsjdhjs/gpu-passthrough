@@ -8,6 +8,7 @@ GPU passthrough without restart: https://www.reddit.com/r/VFIO/comments/93c4s7/p
 Passing primary nvidia gpu to vm (proprietary drivers) with X restart: https://bbs.archlinux.org/viewtopic.php?id=233959  
 Collection of information and scripts regarding gpu passthrough: https://gitlab.com/YuriAlek/vfio  
 Arch Wiki article: https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF
+GPU hotplug: https://gist.github.com/ArseniyShestakov/dc152d080c65ebaa6781
 
 ### amd reset bug
 The AMD reset bug is an issue in qemu with many AMD cards.
