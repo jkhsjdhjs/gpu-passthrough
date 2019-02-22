@@ -33,3 +33,4 @@ This is caused by the NVIDIA driver (apparently only on Windows 10) trying to us
 `ignore_msrs` is already set to 1 here (check with `cat /sys/module/kvm/parameters/ignore_msrs`).  
 It could be fixed by changing the CPU model. However I haven't had the time to test which CPU model works yet.  
 https://www.reddit.com/r/VFIO/comments/4kagkv/nvidia_system_unstable_windows_10_qemukvmvgapass/d3dldyj/
+EDIT: Changing the CPU model results either in the VM not booting or the errors still occuring.
