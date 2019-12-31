@@ -7,7 +7,7 @@ systemctl stop display-manager
 echo 0 > /sys/class/vtconsole/vtcon1/bind
 
 # disable intel Xorg config
-mv /etc/X11/xorg.conf.d/20-intel.conf{,.disabled}
+rm -f /etc/X11/xorg.conf.d/20-intel.conf
 
 # re-attach gpu
 virsh nodedev-reattach pci_0000_01_00_1

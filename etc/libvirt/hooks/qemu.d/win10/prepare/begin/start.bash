@@ -17,7 +17,13 @@ virsh nodedev-detach pci_0000_01_00_1
 echo 1 > /sys/class/vtconsole/vtcon1/bind
 
 # enable Xorg intel config (so Xorg only detects the intel gpu)
-mv /etc/X11/xorg.conf.d/20-intel.conf{.disabled,}
+cat > /etc/X11/xorg.conf.d/20-intel.conf <<- EOM
+Section "Device"
+    Identifier      "Intel Graphics"
+    Driver          "intel"
+    BusID           "PCI:0:2:0"
+EndSection
+EOM
 
 # start display manager
 systemctl start display-manager.service
