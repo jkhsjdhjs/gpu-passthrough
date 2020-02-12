@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
+sddm_uid="995"
+
 # stop display manager
 systemctl stop display-manager.service
+
+# wait for all sddm processes to exit, because sddm doesn't wait for its helper process
+while systemctl -q is-active "user@$sddm_uid.service"; do
+    sleep 1
+done
 
 # unbind virtual console
 echo 0 > /sys/class/vtconsole/vtcon1/bind
